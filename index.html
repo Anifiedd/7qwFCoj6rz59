@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>你已經被黑客入侵 !</title>
+		<style media="screen">
+			body {
+				background: black;
+				color: red;
+			}
+			@keyframes color {
+				0% {color: red}
+				49% {color: red}
+				50% {color: aqua}
+				99% {color: aqua}
+				100% {color: red}
+			}
+			div#a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				width: 60vw;
+				height: 60vh;
+				left: 20vw;
+				top: 20vh;
+				position: absolute;
+				animation: color 1s infinite;
+			}
+			div#nosel {
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				z-index: 10 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id=a>
+		<h1>你被 Clos08 入侵了！這是一種非破壞性的黑客攻擊，（應該）保持您的所有數據完好無損。 Clos08 不對發生的任何數據丟失負責。</h1>
+		</div>
+		<div id=nosel></div>
+	</body>
+</html>
